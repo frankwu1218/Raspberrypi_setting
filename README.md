@@ -27,3 +27,31 @@ trun on SSH and set other stuff up if needed.
 ```
 sudo reboot
 ```
+
+
+--------------------
+#### We use the same as jetbot module for remotely control via jupyternotebook.(password is "jetbot")
+#### Install jupyter lab
+```
+cd ~/
+sudo apt install python3-smbus curl cmake -y
+git clone https://github.com/lbaitemple/jetbot_nvidia_nano jetbot
+cd ~/jetbot
+sudo python3 setup.py install
+sudo pip3 install packaging ipywidgets
+chmod +x jupyter.sh
+./jupyter.sh 
+```
+
+##### If not successfully run, please use the following commands
+```
+cd ~/jetbot/jetbot/utils
+python3 create_stats_service.py
+sudo mv jetbot_stats.service /etc/systemd/system/jetbot_stats.service
+sudo systemctl enable jetbot_stats
+sudo systemctl start jetbot_stats
+python3 create_jupyter_service.py
+sudo mv jetbot_jupyter.service /etc/systemd/system/jetbot_jupyter.service
+sudo systemctl enable jetbot_jupyter
+sudo systemctl start jetbot_jupyter
+```
