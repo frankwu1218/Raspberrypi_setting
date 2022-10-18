@@ -24,3 +24,6 @@ cd /etc/wpa_supplicant/
 sudo raspi-config
 ```
 trun on SSH and set other stuff up if needed.
+```
+sudo reboot
+```
