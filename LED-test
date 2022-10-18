@@ -1,6 +1,0 @@
-LED-test
-
-```
-cd Desktop/
-sudo apt-get install python-rpi.gpio(in case no rpi.gpio library)
-```
