@@ -20,6 +20,8 @@ Upload "interfaces" and "wpa_supplicant.conf" to the boot file of Raspberrypi.
 Log in: pi/raspberry
 ```
 sudo -s
+cd /boot
+cp interfaces /etc/network
 cd /etc/wpa_supplicant/
 sudo raspi-config
 ```
