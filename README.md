@@ -80,6 +80,7 @@ cd
 nano crontab –e
 ```
 type ```@reboot python3 /home/pi/stats.py &```
+
 ```sudo reboot```
 
 
