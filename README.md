@@ -55,3 +55,34 @@ sudo mv jetbot_jupyter.service /etc/systemd/system/jetbot_jupyter.service
 sudo systemctl enable jetbot_jupyter
 sudo systemctl start jetbot_jupyter
 ```
+
+#####oled info display(https://www.youtube.com/watch?v=lRTQ0NsXMuw)
+```
+sudo apt-get update
+sudo apt-get full-upgrade --y
+sudo reboot
+sudo apt-get install python3-pip
+sudo pip3 install --upgrade setuptools
+sudo pip3 install --upgrade adafruit-python-shell
+wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/raspi-blinka.py
+sudo python3 raspi-blinka.py
+sudo i2cdetect -y 1
+sudo pip3 install adafruit-circuitpython-ssd1306
+cd OLED_Stats
+python3 stats.py
+cd OLED_Stats
+cp PixelOperator.ttf ~/PixelOperator.ttf
+cp stats.py ~/stats.py
+cp fontawesome-webfont.ttf ~/fontawesome-webfont.ttf
+```
+```
+cd
+nano crontab –e
+```
+type ```@reboot python3 /home/pi/stats.py &```
+```sudo reboot```
+
+
+
+
+
