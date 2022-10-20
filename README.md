@@ -81,15 +81,14 @@ sudo pip3 install adafruit-circuitpython-ssd1306
 sudo apt-get install python3-pil
 git clone https://github.com/mklements/OLED_Stats.git
 cd OLED_Stats
-python3 stats.py
-cd OLED_Stats
+python3 stats.py (display)
 cp PixelOperator.ttf ~/PixelOperator.ttf
 cp stats.py ~/stats.py
 cp fontawesome-webfont.ttf ~/fontawesome-webfont.ttf
 ```
 ```
 cd
-nano crontab –e
+crontab –e
 ```
 type ```@reboot python3 /home/pi/stats.py &```
 
