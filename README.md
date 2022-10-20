@@ -90,7 +90,7 @@ cp fontawesome-webfont.ttf ~/fontawesome-webfont.ttf
 cd
 crontab –e
 ```
-type ```@reboot python3 /home/pi/stats.py &```
+type ```@reboot cd /home/pi/OLED_Stats && python3 stats.py &```
 
 ```sudo reboot```
 
