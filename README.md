@@ -78,6 +78,8 @@ wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/m
 sudo python3 raspi-blinka.py
 sudo i2cdetect -y 1
 sudo pip3 install adafruit-circuitpython-ssd1306
+sudo apt-get install python3-pil
+git clone https://github.com/mklements/OLED_Stats.git
 cd OLED_Stats
 python3 stats.py
 cd OLED_Stats
