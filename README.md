@@ -1,10 +1,10 @@
-####raspberry pi wifi personal 
+#### raspberry pi wifi personal 
 
 copy ```/raspberry_pi_wifi_personal/wpa_supplicant.conf``` to boot file of raspberrypi.
 
 
 
-####raspberry pi wifi enterprise
+#### raspberry pi wifi enterprise
 
 To solve the issue of WAP WIFI encryption for remotely controll of raspberrypi.  
 
@@ -66,7 +66,7 @@ sudo systemctl enable jetbot_jupyter
 sudo systemctl start jetbot_jupyter
 ```
 
-####oled info display(https://www.youtube.com/watch?v=lRTQ0NsXMuw)
+#### oled info display(https://www.youtube.com/watch?v=lRTQ0NsXMuw)
 ```
 sudo apt-get update
 sudo apt-get full-upgrade -y
