@@ -1,4 +1,5 @@
-######raspberry pi wifi personal
+######raspberry pi wifi personal 
+
 copy ```/raspberry_pi_wifi_personal/wpa_supplicant.conf``` to boot file of raspberrypi.
 
 
