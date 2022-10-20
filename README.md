@@ -1,10 +1,10 @@
-#####raspberry pi wifi personal 
+####raspberry pi wifi personal 
 
 copy ```/raspberry_pi_wifi_personal/wpa_supplicant.conf``` to boot file of raspberrypi.
 
 
 
-#####raspberry pi wifi enterprise
+####raspberry pi wifi enterprise
 
 To solve the issue of WAP WIFI encryption for remotely controll of raspberrypi.  
 
