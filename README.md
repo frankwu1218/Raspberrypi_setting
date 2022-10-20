@@ -45,7 +45,7 @@ sudo reboot
 ```
 cd ~/
 sudo apt install python3-smbus curl cmake -y
-git clone https://github.com/frankwu1218/jetbot_nvidia_nano-1
+git clone https://github.com/frankwu1218/jetbot_nvidia_nano-1 jetbot
 cd ~/jetbot
 sudo python3 setup.py install
 sudo pip3 install packaging ipywidgets
