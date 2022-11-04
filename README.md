@@ -85,6 +85,14 @@ type ```@reboot cd /home/pi/OLED_Stats && python3 stats.py &```
 ```sudo reboot```
 
 
+#### NODE-RED setup. 
+```
+sudo apt update
+sudo apt upgrade -y
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) --node14
+sudo systemctl enable nodered.service
+```
+
 
 
 
