@@ -19,6 +19,10 @@ Use nano to edit the file "wpa_supplicant.conf" to change the ssid, identity and
 echo -n [password] | iconv -t UTF-16LE | openssl md4
 ```
 
+####
+copy ```/raspberry_pi_wifi_personal/wpa_supplicant.conf``` to /etc/wpa_supplicant and replace the original file "wpa_supplicant.conf"
+
+
 ```
 sudo -s
 sudo raspi-config
